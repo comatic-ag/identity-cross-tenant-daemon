@@ -53,7 +53,7 @@ async Task WriteAllUserNamesInTenantFromMSGraph()
 
     foreach (var user in allUsers)
     {
-        Console.WriteLine(user.DisplayName);
+        Console.WriteLine($"{user.DisplayName} (Employee-ID: {user.EmployeeId} / User Principal Name: {user.UserPrincipalName})");
     }
 }
 
